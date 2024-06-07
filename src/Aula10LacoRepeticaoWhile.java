@@ -2,6 +2,7 @@ public class Aula10LacoRepeticaoWhile {
 
   public static void main(String[] args) {
     // Laco Repeticao While
+    // trabalha com uma variável de condição, enquanto for verdadeira
 
     // while não executa se a condição for falso
     int count = 0;
