@@ -3,7 +3,7 @@ package domain;
 public class CarroStatic {
   private String nome;
   private String modelo;
-  public static double velocidadeMax = 250; // <- atributo static
+  private static double velocidadeMax = 250; // <- atributo static
 
   public CarroStatic() { }
 
@@ -11,7 +11,6 @@ public class CarroStatic {
     this.nome = nome;
     this.modelo = modelo;
   }
-
 
   public String getNome() {
     return nome;
@@ -29,7 +28,12 @@ public class CarroStatic {
     this.modelo = modelo;
   }
 
-  public double getVelocidadeMax() {
+  public static double getVelocidadeMax() {
     return velocidadeMax;
   }
+
+  public static void setVelocidadeMax(double velocidadeMax) {
+    CarroStatic.velocidadeMax = velocidadeMax;
+  }
+
 }
