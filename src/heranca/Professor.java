@@ -18,6 +18,22 @@ public class Professor {
     this.eventos = eventos;
   }
 
+  public void imprimir() {
+    System.out.println("## Professor ##");
+    System.out.println("Professor: " + this.nome);
+    if (this.eventos == null) return;
+    System.out.println("## Seminários cadastrados ##");
+    for (Evento evento : this.eventos) {
+      System.out.println(evento.getTitulo());
+      System.out.println(evento.getLocal().getEndereco());
+      if (evento.getAlunos() == null || evento.getAlunos().length == 0) continue;
+      System.out.println("## Alunos ##");
+      for (Aluno aluno : evento.getAlunos()) {
+        System.out.println("Aluno : " + aluno.getNome() + " idade: " + aluno.getIdade());
+      }
+    }
+  }
+
   public String getNome() {
     return nome;
   }
