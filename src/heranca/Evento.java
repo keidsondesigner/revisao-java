@@ -8,13 +8,9 @@ public class Evento {
 
   public Evento() { }
 
-  public Evento(String titulo) {
+  public Evento(String titulo, LocalEvento local) {
     this.titulo = titulo;
-  }
-
-  public Evento(String titulo, Aluno[] alunos) {
-    this.titulo = titulo;
-    this.alunos = alunos;
+    this.local = local;
   }
 
   public Evento(String titulo, Aluno[] alunos, LocalEvento local) {
