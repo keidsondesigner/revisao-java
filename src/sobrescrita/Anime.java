@@ -14,4 +14,9 @@ public class Anime {
   public void setNome(String nome) {
     this.nome = nome;
   }
+
+  @Override
+  public String toString() {
+    return "Anime [nome=" + nome + "]";
+  }
 }
